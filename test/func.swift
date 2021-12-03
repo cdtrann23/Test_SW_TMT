@@ -39,12 +39,12 @@ func Taxi() {
         print("Số tiền cần thanh toán cho \(km) km là: \(monney) đ")
     }
 
-    if(km > 1 && km <= 30){
-        monney = km * 4000
+    if(km > 1 && km <= 31){
+        monney = 5000 + km * 4000
         print("Số tiền cần thanh toán cho \(km) km là: \(monney) đ")
     }
-    if(km > 30){
-        monney = 30 * 4000 + (km - 30)*3000
+    if(km > 31){
+        monney = 5000 + 30 * 4000 + (km - 31)*3000
         print("Số tiền cần thanh toán cho \(km) km là: \(monney) đ")
     }
 
